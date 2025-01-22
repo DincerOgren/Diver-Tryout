@@ -14,13 +14,19 @@ public class PMovementTemp : MonoBehaviour
 
     private float verticalLookRotation = 0f; // Tracks vertical camera rotation
 
+    Animator anim;
     private void Start()
     {
+        anim = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetTrigger("Gather");
+        }
         HandleMovement();
         HandleMouseLook();
     }
