@@ -9,6 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat23
   m_Shader: {fileID: -6465566751694194690, guid: e803a1aef45f8a74aa7189bd2f372b00, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
@@ -16,7 +18,9 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -34,11 +38,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Absorbtion_Cofactor: 0.01
+    - _Absorbtion_Cofactor: 0.093
     - _Depth: 3
     - _FoamSpeed_Y: 0.08
     - _Foam_Amount: 1.09
-    - _Foam_Distance: 3
+    - _Foam_Distance: 0.5
     - _Foam_Noise_Scale: 200
     - _Foam_Speed: 0.01
     - _QueueControl: 0
@@ -46,8 +50,9 @@ Material:
     m_Colors:
     - _Absorbtion_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Foam_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Water_Color: {r: 0, g: 0.8110099, b: 1, a: 0}
+    - _Water_Color: {r: 0.45520112, g: 0.74130374, b: 0.79622644, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &2229149530281083761
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -60,4 +65,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 5
+  version: 9
