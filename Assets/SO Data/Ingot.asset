@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7798cabc027cbcf44aecb8443e6a0d8b, type: 3}
-  m_Name: Wood
+  m_Name: Ingot
   m_EditorClassIdentifier: 
-  materialName: Wood
-  materialImage: {fileID: 0}
+  materialName: default
+  materialImage: {fileID: 21300000, guid: 3e4fcc84a0ac95b429c56452575f6021, type: 3}
   isStackable: 0
   description: 
